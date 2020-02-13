@@ -1,2 +1,2 @@
 # summer-boot
-a DDD CQRS framework and tools
+a DDD framework and tools

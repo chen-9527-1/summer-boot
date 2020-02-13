@@ -1,0 +1,24 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: test-service1
+  jpa:
+    database: h2
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:h2:mem:test
+    username: sa
+    password: 123456
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9000/eureka/
+summerframework:
+  gatewayUrl: http://127.0.0.1:8080
